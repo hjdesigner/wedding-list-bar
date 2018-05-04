@@ -23,14 +23,35 @@
 			width: 100%;
 			max-width: 1140px;
     	margin: 0px auto;
+			display: flex;
+			padding: 10px 0;
+			align-items: center;
+			justify-content: space-between;
+			position: relative;
+		}
+		&__closeBar {
+			width: 30px;
+  		height: 20px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+  		background-color: #6d98ae;
+			border-radius: 4px 4px 0 0;
+			position: absolute;
+			top: -20px;
+			right: 0;
+			i{
+				width: 9px;
+				height: 9px;
+				background-color: #FFF;
+				cursor: pointer;
+			}
 		}
 		&__logo {
 			width: 228px;
 			height: 40px;
-			margin: 15px 0;
 			display: flex;
 			align-items: center;
-			margin-right: 93px;
 			i {
 				width: 50px;
 				height: 40px;
@@ -55,8 +76,84 @@
 			}
 		}
 		&__items {
+			width: 514px;
+			height: 50px;
+			display: flex;
+			align-items: center;
 			li {
-				width: 90px;
+				width: 50px;
+				height: 50px;
+				float: left;
+				margin-right: 20px;
+				background-color: #FFF;
+				border: solid 1px #e5e5e5;
+				text-align: center;
+				border-radius: 4px;
+				position: relative;
+				img {
+					margin: 0 auto;
+				}
+			}
+			&-close {
+				width: 16px;
+  			height: 16px;
+  			background-color: #e5e5e5;
+				border-radius: 50%;
+				position: absolute;
+				top: -7px;
+				right: -7px;
+				cursor: pointer;
+				font-family: Arial;
+  			font-size: 12px;
+  			font-weight: normal;
+  			font-style: normal;
+  			font-stretch: normal;
+  			line-height: 1.34;
+  			letter-spacing: normal;
+  			text-align: center;
+  			color: #2a7bbf;
+			}
+			&-text {
+				width: 183px;
+				float: left;
+				margin-left: 50px;
+				p {
+					font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+					font-size: 14px;
+ 			 		font-weight: normal;
+  				font-style: normal;
+  				font-stretch: normal;
+  				line-height: 1.43;
+  				letter-spacing: normal;
+  				text-align: left;
+  				color: #ffffff;
+					a {
+						color: #FFF;
+						font-weight: 600;
+						text-decoration: underline;
+						display: inline-block;
+					}
+				}
+			}
+		}
+		&__button {
+			button {
+				width: 180px;
+				height: 44px;
+				border-radius: 4px;
+	  		background-color: #73b528;
+				cursor: pointer;
+				border: 0;
+				text-transform: uppercase;
+				font-family: 'Futura-Bold';
+  			font-size: 14px;
+  			font-weight: bold;
+  			font-style: normal;
+  			font-stretch: normal;
+  			line-height: 1.43;
+  			letter-spacing: .8px;
+  			text-align: center;
+  			color: #ffffff;
 			}
 		}
 	}
