@@ -1,0 +1,63 @@
+@font-face {
+	font-family: 'Futura-Std';
+  font-weight: normal;
+  font-style: normal;
+  src: url('./fonts/FuturaStdBook_19044.eot') format('eot');
+  src: url('./fonts/FuturaStdBook_19044.eot?#iefix') format('embedded-opentype'),
+       url('./fonts/FuturaStdBook_19044.woff') format('woff'),
+       url('./fonts/FuturaStdBook_19044.ttf') format('truetype');
+}
+
+
+#weddingListBar {
+	background-color: #81afc6;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	img {
+		width: 100%;
+	}
+	.weddingListBar {
+		&-center {
+			width: 100%;
+			max-width: 1140px;
+    	margin: 0px auto;
+		}
+		&__logo {
+			width: 228px;
+			height: 40px;
+			margin: 15px 0;
+			display: flex;
+			align-items: center;
+			margin-right: 93px;
+			i {
+				width: 50px;
+				height: 40px;
+				margin-right: 30px;
+				background-color: #FFF;
+			}
+			p {
+				font-family: 'Futura-Light';
+  			font-size: 14px;
+  			font-weight: normal;
+  			font-style: normal;
+  			font-stretch: normal;
+  			line-height: 1.21;
+  			letter-spacing: normal;
+  			text-align: left;
+  			color: #ffffff;
+				text-transform: uppercase;
+				strong {
+					font-family: 'Futura-Bold';
+					font-weight: 600;
+				}
+			}
+		}
+		&__items {
+			li {
+				width: 90px;
+			}
+		}
+	}
+}
