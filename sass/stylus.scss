@@ -15,6 +15,11 @@
 	bottom: 0;
 	left: 0;
 	width: 100%;
+	transform: translateY(0px);
+	transition: transform .25s ease-in-out;
+	&.close {
+		transform: translateY(70px);
+	}
 	img {
 		width: 100%;
 	}
@@ -80,11 +85,19 @@
 			height: 50px;
 			display: flex;
 			align-items: center;
+			ul {
+				width: 100%;
+				height: 60px;
+				margin: 0;
+				padding: 0;
+    		white-space: nowrap;
+			}
 			li {
 				width: 50px;
 				height: 50px;
-				float: left;
+				display: inline-block;
 				margin-right: 20px;
+				margin-top: 6px;
 				background-color: #FFF;
 				border: solid 1px #e5e5e5;
 				text-align: center;
@@ -92,6 +105,52 @@
 				position: relative;
 				img {
 					margin: 0 auto;
+				}
+			}
+			&-product {
+				width: 280px;
+				display: inline-block;
+				position: relative;
+				.slick{
+					&-disabled {
+						display: none !important;
+					}
+					&-arrow {
+						width: 22px;
+						height: 26px;
+						position: absolute;
+						top: calc(50% - 13px);
+						font-size: 0;
+						background-color: transparent;
+						border: 0;
+						outline: 1px solid transparent;
+						cursor: pointer;
+						margin: 0;
+						padding: 0;
+						&:after {
+							content: "";
+							width: 15px;
+							height: 15px;
+							position: absolute;
+							top: 5px;
+							left: 0;
+							border: 3px solid #2a7bbf;
+							border-left: 0;
+							border-bottom: 0;
+						}
+					}
+					&-next {
+						right: -11px;
+						&:after {
+							transform: rotate(45deg)
+						}
+					}
+					&-prev {
+						left: -29px;
+						&:after {
+							transform: rotate(-135deg)
+						}
+					}
 				}
 			}
 			&-close {
@@ -116,7 +175,7 @@
 			&-text {
 				width: 183px;
 				float: left;
-				margin-left: 50px;
+				margin-left: 26px;
 				p {
 					font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 					font-size: 14px;

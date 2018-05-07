@@ -4,7 +4,7 @@ var gulp					=	require('gulp'),
 		sass          = require('gulp-sass');
 
 gulp.task('sass', function(){
-    return gulp.src('./src/sass/stylus.+(scss|sass)')
+    return gulp.src('./sass/stylus.+(scss|sass)')
       .pipe(sourcemaps.init())
       .pipe(sass({
         outputStyle: 'compressed'
@@ -14,9 +14,9 @@ gulp.task('sass', function(){
 			  cascade: false
 			 }))
       .pipe(sourcemaps.write(''))            
-      .pipe(gulp.dest('./dist/css/'));
+      .pipe(gulp.dest('./css/'));
 });
 
 gulp.task('sass:watch', function () {
-	gulp.watch('./src/sass/**/*.scss', ['sass']);
+	gulp.watch('./sass/**/*.scss', ['sass']);
 });
