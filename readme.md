@@ -4,6 +4,7 @@
 - JS : js/main.js
 - SASS : sass/stylus.scss
 - CSS minified : css/stylus.css  
+- IMAGES : images/
 - HTML : index.html
 
 ## Dependency to run the SASS
