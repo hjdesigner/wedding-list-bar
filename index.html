@@ -55,27 +55,18 @@
 	<h1></h1>
 
 	<div id="weddingListBar">
-		<div class="weddingListBar__details">
+		<div class="weddingListBar__details" data-id="details">
 			<div class="weddingListBar-center">
 				<div class="weddingListBar__details-header">
 					<h2>Itens para adicionar a lista</h2>
 					<div class="weddingListBar__details-nav">
-						<button>limpar lista</button>
-						<button>
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="7136 -18299.582 12 16.363">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #666;
-        fill-rule: evenodd;
-      }
-    </style>
-  </defs>
-  <g id="icone-lixeira" transform="translate(7136 -18299.583)">
-    <path id="Path_137" data-name="Path 137" class="cls-1" d="M1.665,15.253a1.486,1.486,0,0,0,1.5,1.111H8.836a1.486,1.486,0,0,0,1.5-1.111l1.12-10.89H.546ZM8.182,6A.546.546,0,1,1,9.273,6l-.546,8.182a.546.546,0,0,1-1.091,0ZM5.455,6A.545.545,0,1,1,6.545,6v8.182a.545.545,0,1,1-1.091,0V6ZM3.273,5.455A.545.545,0,0,1,3.818,6l.546,8.182a.545.545,0,0,1-1.091,0L2.727,6a.546.546,0,0,1,.546-.546Zm7.855-3.272h-2.4V1.091C8.727.263,8.46,0,7.636,0H4.364A.954.954,0,0,0,3.273,1.091V2.183H.873A.847.847,0,0,0,0,3a.847.847,0,0,0,.873.818H11.127A.846.846,0,0,0,12,3a.846.846,0,0,0-.873-.819Zm-3.491,0H4.364V1.091H7.636V2.183Zm0,0" transform="translate(0 0)"/>
-  </g>
-</svg>
+						<button class="weddingListBar__details-nav-clear">
+							<i>
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="7136 -18299.582 12 16.363"><g id="icone-lixeira" transform="translate(7136 -18299.583)"><path id="Path_137" data-name="Path 137" class="cls-1" d="M1.665,15.253a1.486,1.486,0,0,0,1.5,1.111H8.836a1.486,1.486,0,0,0,1.5-1.111l1.12-10.89H.546ZM8.182,6A.546.546,0,1,1,9.273,6l-.546,8.182a.546.546,0,0,1-1.091,0ZM5.455,6A.545.545,0,1,1,6.545,6v8.182a.545.545,0,1,1-1.091,0V6ZM3.273,5.455A.545.545,0,0,1,3.818,6l.546,8.182a.545.545,0,0,1-1.091,0L2.727,6a.546.546,0,0,1,.546-.546Zm7.855-3.272h-2.4V1.091C8.727.263,8.46,0,7.636,0H4.364A.954.954,0,0,0,3.273,1.091V2.183H.873A.847.847,0,0,0,0,3a.847.847,0,0,0,.873.818H11.127A.846.846,0,0,0,12,3a.846.846,0,0,0-.873-.819Zm-3.491,0H4.364V1.091H7.636V2.183Zm0,0" transform="translate(0 0)"/></g></svg>
+							</i>
+							limpar lista
 						</button>
+						<button class="weddingListBar__details-nav-close" data-id="detailsClose"></button>
 					</div>
 				</div>
 				<div class="weddingListBar__details-body">
@@ -92,7 +83,67 @@
 								</div>
 							</div>
 							<div class="weddingListBar__details-remove">
-								<button>remove da lista</button>
+								<button data-id="weddingListBar__details-remove">remove da lista</button>
+							</div>
+						</li>
+						<li>
+							<div class="weddingListBar__details-product">
+								<figure>
+									<img src="./images/product.jpg" alt="">
+								</figure>
+								<div class="weddingListBar__details-info">
+									<p class="title">Carregador Portátil TP-Link TL-PB 10400mAh com 2</p>
+									<p class="value">R$ 9.999,99</p>
+									<p class="installment">ou 9x de R$ 77,77</p>
+								</div>
+							</div>
+							<div class="weddingListBar__details-remove">
+								<button data-id="weddingListBar__details-remove">remove da lista</button>
+							</div>
+						</li>
+						<li>
+							<div class="weddingListBar__details-product">
+								<figure>
+									<img src="./images/product.jpg" alt="">
+								</figure>
+								<div class="weddingListBar__details-info">
+									<p class="title">Carregador Portátil TP-Link TL-PB 10400mAh com 2</p>
+									<p class="value">R$ 9.999,99</p>
+									<p class="installment">ou 9x de R$ 77,77</p>
+								</div>
+							</div>
+							<div class="weddingListBar__details-remove">
+								<button data-id="weddingListBar__details-remove">remove da lista</button>
+							</div>
+						</li>
+						<li>
+							<div class="weddingListBar__details-product">
+								<figure>
+									<img src="./images/product.jpg" alt="">
+								</figure>
+								<div class="weddingListBar__details-info">
+									<p class="title">Carregador Portátil TP-Link TL-PB 10400mAh com 2</p>
+									<p class="value">R$ 9.999,99</p>
+									<p class="installment">ou 9x de R$ 77,77</p>
+								</div>
+							</div>
+							<div class="weddingListBar__details-remove">
+								<button data-id="weddingListBar__details-remove">remove da lista</button>
+							</div>
+						</li>
+						<li>
+							<div class="weddingListBar__details-product">
+								<figure>
+									<img src="./images/product.jpg" alt="">
+								</figure>
+								<div class="weddingListBar__details-info">
+									<p class="title">Carregador Portátil TP-Link TL-PB 10400mAh com 2</p>
+									<p class="value">R$ 9.999,99</p>
+									<p class="installment">ou 9x de R$ 77,77</p>
+								</div>
+							</div>
+							<div class="weddingListBar__details-remove">
+								<button data-id="weddingListBar__details-remove">remove da lista</button>
 							</div>
 						</li>
 					</ul>
@@ -146,7 +197,7 @@
 					</ul>
 				</div>
 				<div class="weddingListBar__items-text">
-				<p><span>15 produtos</span> selecionado <a href="#">ver detalhes</a></p>
+					<p><span>15 produtos</span> selecionado <button data-id="openDetails"><span data-id="openDetailsText">ver</span> detalhes</button></p>
 				</div>
 			</div>
 			<div class="weddingListBar__button">
@@ -154,6 +205,7 @@
 			</div>
 		</div>
 	</div>
+	<script src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
