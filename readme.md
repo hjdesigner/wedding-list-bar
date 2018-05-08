@@ -12,4 +12,5 @@
 - Gulp
 
 ## SASS Build command
+- yarn install
 - yarn run sass
